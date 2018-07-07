@@ -85,3 +85,8 @@ body{
 .pl15{
 	padding-left: 15px;
 }
+.register-forget {
+	position: relative;
+	left: 285px;
+	margin-top: 5px;
+}

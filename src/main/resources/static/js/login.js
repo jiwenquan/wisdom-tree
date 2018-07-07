@@ -1,6 +1,7 @@
 $(function(){
 	$('#username').focus().blur(checkName);
 	$('#password').blur(checkPassword);
+	$('#register').click(registerJump);
 });
 
 function checkName(){
@@ -33,4 +34,8 @@ function checkPassword(){
 	}
 	$('#password-msg').empty();
 	return true;
+}
+
+function registerJump() {
+	$('.page').load("register.html");
 }

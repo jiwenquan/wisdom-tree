@@ -46,7 +46,7 @@ body{
     margin: 20px 0 0 20px;
 }
 .loginwarrp .login-sub{
-	text-align: center;
+	text-align: justify-all;
 }
 .loginwarrp .login-sub input{
 	margin-top:15px;
