@@ -33,3 +33,6 @@ spring:
       static-path-pattern: /static/**
     resources:
       static-locations: classpath:/static/, classpath:/templates/
+#    redis:
+#      host: 127.0.0.1
+#      post: 6379

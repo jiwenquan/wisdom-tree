@@ -1,7 +1,6 @@
 package com.wisdomtree.service;
 
-import com.wisdomtree.dto.UserInfo;
-import org.springframework.stereotype.Service;
+import com.wisdomtree.dto.SysUser;
 
 /**
  *
@@ -11,5 +10,5 @@ import org.springframework.stereotype.Service;
  */
 public interface UserService {
 
-    public UserInfo findByUserName(String userName);
+    public SysUser findByUserName(String userName);
 }

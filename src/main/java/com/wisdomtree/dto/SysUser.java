@@ -10,7 +10,7 @@ import java.util.List;
  * @author jiwenquan
  * @create 2018/7/6 16:25
  */
-public class UserInfo implements Serializable {
+public class SysUser implements Serializable {
 
     private String id;
     private String userName;

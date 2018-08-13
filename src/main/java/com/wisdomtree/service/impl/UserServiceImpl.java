@@ -1,7 +1,7 @@
 package com.wisdomtree.service.impl;
 
 import com.wisdomtree.dao.UserDao;
-import com.wisdomtree.dto.UserInfo;
+import com.wisdomtree.dto.SysUser;
 import com.wisdomtree.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,7 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public UserInfo findByUserName(String userName) {
+    public SysUser findByUserName(String userName) {
         return this.userDao.selectByUserName(userName);
     }
 }

@@ -1,6 +1,6 @@
 package com.wisdomtree.dao;
 
-import com.wisdomtree.dto.UserInfo;
+import com.wisdomtree.dto.SysUser;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -12,5 +12,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserDao {
 
-    UserInfo selectByUserName(String userName);
+    SysUser selectByUserName(String userName);
 }

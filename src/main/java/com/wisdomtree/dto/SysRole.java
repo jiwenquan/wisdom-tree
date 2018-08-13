@@ -18,7 +18,7 @@ public class SysRole implements Serializable {
     //是否可用,如果不可用将不会添加给用户
     private Boolean available = Boolean.FALSE;
     private List<SysPermission> permissions;
-    private List<UserInfo> userInfos;
+    private List<SysUser> userInfos;
     private Date created;
     private Date updated;
 
@@ -62,11 +62,11 @@ public class SysRole implements Serializable {
         this.permissions = permissions;
     }
 
-    public List<UserInfo> getUserInfos() {
+    public List<SysUser> getUserInfos() {
         return userInfos;
     }
 
-    public void setUserInfos(List<UserInfo> userInfos) {
+    public void setUserInfos(List<SysUser> userInfos) {
         this.userInfos = userInfos;
     }
 

@@ -37,5 +37,5 @@ function checkPassword(){
 }
 
 function registerJump() {
-	$('.page').load("register.html");
+	$('.page').load("../register.html");
 }
