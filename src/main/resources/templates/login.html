@@ -3,40 +3,47 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>智慧树</title>
-	<link rel="stylesheet" href="../static/css/reset.css" />
-	<link rel="stylesheet" href="../static/css/login.css" />
-	<link rel="stylesheet" href="../static/css/bootstrap.css" />
-	<link rel="stylesheet" href="../static/css/register.css" />
-	<script type="text/javascript" src="../static/js/jquery.min.js"></script>
-	<script type="text/javascript" src="../static/js/login.js"></script>
-	<script type="text/javascript" src="../static/js/bootstrap.js"></script>
-	<script type="text/javascript" src="../static/js/register.js"></script>
+	<title>智慧树后管平台</title>
+	<link rel="stylesheet" href="../css/reset.css" />
+	<link rel="stylesheet" href="../css/login.css" />
+	<link rel="stylesheet" href="../css/bootstrap.css" />
+	<link rel="stylesheet" href="../css/register.css" />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/login.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+	<script type="text/javascript" src="../js/register.js"></script>
+	<script type="text/javascript" src="../js/utils.js"></script>
+	<script type="text/javascript" src="../js/canvas-particle.js"></script>
 </head>
 <body>
 <div class="page">
 	<div class="loginwarrp">
 		<div class="logo">用户登陆</div>
         <div class="login_form">
-			<form id="Login" name="Login" method="post" action="toLogin">
+			<form id="login">
 				<li class="login-item">
 					<span>用户名：</span>
-					<input type="text" id="username" name="userName" class="login_input" >
-                                        <span id="count-msg" class="error"></span>
+					<input type="text" id="username" class="login_input" >
+					<span id="count-msg" class="error"></span>
 				</li>
 				<li class="login-item">
 					<span>密　码：</span>
-					<input type="password" id="password" name="password" class="login_input" >
-                                        <span id="password-msg" class="error"></span>
+					<input type="password" id="password" class="login_input" >
+					<span id="password-msg" class="error"></span>
 				</li>
 				<li class="login-item verify">
 					<span>验证码：</span>
-					<input type="text" name="checkCode" class="login_input verify_input">
+					<input type="text" id="checkcode" class="login_input verify_input">
 				</li>
-				<img src="images/verify.png" border="0" class="verifyimg" />
-				<div class="clearfix"></div>
+				<img id="vericode" src="/login/getVerificationCode" border="0" class="verifyimg" />
+				<a id="notsee" href = "javascript:;" onclick =
+						"document.getElementById('vericode').src='/login/getVerificationCode?'+Math.random();">
+					看不清?</a><br/>
+				<div class="clearfix">
+					<em id="emerrormsg" style="color: #FF0000;"></em>
+				</div>
 				<li class="login-sub">
-					<input type="submit" name="Submit" value="登录" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="btnlogin" type="button" value="登录" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <input type="reset" name="Reset" value="重置" />
 				</li>
 			</form>
@@ -64,9 +71,9 @@
 			CanvasParticle(config);
 		}
 	</script>
-	<script type="text/javascript" src="../static/js/canvas-particle.js"></script>
+
 	<div class="screenbg">
-		<li><a href="javascript:;"><img src="../static/images/bj.jpg"></a></li>
+		<li><a href="javascript:;"><img src="../images/bj.jpg"></a></li>
 	</div>
 </body>
 </html>

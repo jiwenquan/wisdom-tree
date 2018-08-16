@@ -2,9 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>智慧树后管平台</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../ztree/zTreeStyle.css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/utils.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../ztree/jquery.ztree.core.min.js"></script>
+    <script type="text/javascript" src="../ztree/jquery.ztree.excheck.js"></script>
 </head>
 <body>
-<h1>index</h1>
+    <div class="mainhead">
+        <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="../images/logo.png">
+                </div>
+                <div>
+                    <ul class="nav navbar-nav" id="ulnavigation">
+                        <li class="active"><a href="#">首页</a></li>
+                        <li><a href="#" id="aelementconfig">APP元素配置</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="divmodular">
+        <div class="mainhomepage" id="divhomepage" style="display: block"></div>
+        <div class="mainappelement" id="divmainappelement" style="display: none"></div>
+    </div>
+
 </body>
 </html>

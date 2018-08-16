@@ -1,4 +1,4 @@
-package com.wisdomtree;
+package com.wisdomtree.shiro;
 
 import com.wisdomtree.dto.SysPermission;
 import com.wisdomtree.dto.SysRole;

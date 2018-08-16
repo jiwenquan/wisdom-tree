@@ -112,6 +112,13 @@ body{
 	float:right;
 }
 .page {
-	position:fixed;
+	position:absolute;
 	width: 100%;
+}
+
+#notsee {
+    width: 100px;
+	position: relative;
+	left: 348px;
+	top: -25px;
 }

@@ -1,0 +1,34 @@
+.tip_icon {
+    position: absolute;
+    background-image: url(../images/apply.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    width: 32px;
+    height: 32px;
+}
+
+.tip_msg {
+    padding-left: 36px;
+}
+
+.container-fluid {
+    background-color: #5cb85c;
+}
+.mainappelement .bv-menu {
+    width: 20%;
+    height: 500px;
+    background-color: #2e6da4;
+}
+.mainappelement .bv-menu .title {
+    color: yellow;
+}
+.mainappelement .bv-menu .node_name {
+    color: #D0F0DF;
+}
+.mainappelement .subli {
+    line-height: 27px;
+}
+.mainappelement .titleli {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

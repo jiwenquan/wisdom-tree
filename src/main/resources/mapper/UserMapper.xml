@@ -47,7 +47,7 @@
 
   <select id="selectByUserName" resultMap="BaseResultMap">
     select <include refid="Base_Column_List"/>
-    from user
+    from sys_user
     where user_name = #{username}
   </select>
 </mapper>
