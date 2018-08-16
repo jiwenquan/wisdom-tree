@@ -1,11 +1,12 @@
+<script type="text/javascript" src="../js/projectmanage/appElement.js"></script>
 <div>
     <div class="bv-menu" style="overflow-y: hidden; outline: none;">
         <ul id="ulmenutree" class="ztree bv-tree">
             <li class="leve10 titleli">
                 <a class="level0 title" style="font-size: initial; height: 20px;" data-toggle="collapse" href="#ulwelcomeconfig">欢迎页面</a>
                 <ul class="level0" id="ulwelcomeconfig">
-                    <li class="level1 subli">
-                        <span class="node_name">欢迎页图片配置</span>
+                    <li class="level1 subli new_active">
+                        <a href="#" class="node_name" name="AppWelcomeImg">欢迎页图片配置</a>
                     </li>
                 </ul>
             </li>
@@ -13,16 +14,31 @@
                 <a class="level0 title" style="font-size: initial; height: 20px;" data-toggle="collapse" href="#uldiscovery">发现页面</a>
                 <ul class="level0" id="uldiscovery">
                     <li class="level1 subli">
-                        <span class="node_name">头条配置</span>
+                        <a href="#" class="node_name">头条配置</a>
                     </li>
                     <li class="level1 subli">
-                        <span class="node_name">圈子配置</span>
+                        <a href="#" class="node_name">圈子配置</a>
                     </li>
                 </ul>
             </li>
         </ul>
     </div>
-    <div>
-        这个是将要展示数据的地方
+    <div class="br-scontent">
+        <div class="pm-toolbar" >
+            <div style="float:right;">
+                <span class="pm-toolbar-btn">
+                    <a href="#" id="btnAddConfig" class="btn btn-default" name="AppWelcomeImg" title="增加">增加</a>
+                </span>
+            </div>
+        </div>
+        <div class="sbox2 sbox3" style="margin-top: 0px; display:block;">
+            <table id="tblAppWelcomeImgConfig" class="display div-border" cellspacing="0" width="100%"></table>
+        </div>
+        <div class="sbox2 sbox3" style="margin-top: 0px;">
+            <table id="tblTitleConfig" class="display div-border" cellspacing="0" width="100%"></table>
+        </div>
+        <div class="sbox2 sbox3" style="margin-top: 0px;">
+            <table id="tblCircleConfig" class="display div-border" cellspacing="0" width="100%"></table>
+        </div>
     </div>
 </div>

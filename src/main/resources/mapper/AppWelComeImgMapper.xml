@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wisdomtree.dao.AppWelcomeImgDao" >
+  <resultMap id="BaseResultMap" type="com.wisdomtree.dto.AppWelcomeImgDTO" >
+    <id column="id" property="id" jdbcType="VARCHAR" />
+    <result column="summary" property="summary" jdbcType="VARCHAR" />
+    <result column="img_path" property="imgPath" jdbcType="VARCHAR" />
+    <result column="del_flag" property="delFlag" jdbcType="VARCHAR" />
+    <result column="created" property="created" jdbcType="DATE" />
+    <result column="updated" property="updated" jdbcType="DATE" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id,
+    summary,
+    img_path,
+    del_flag,
+    created,
+    updated
+  </sql>
+
+  <select id="countAll" parameterType="com.wisdomtree.common.DataTableSearchCondition" resultType="java.lang.Integer">
+    select count(1)
+    from app_welcome_img
+    <if test="searchCondition != null and searchCondition != ''">
+      where summary like CONCAT('%',#{searchCondition},'%')
+    </if>
+  </select>
+
+  <select id="selectAll" parameterType="com.wisdomtree.common.DataTableSearchCondition" resultMap="BaseResultMap">
+    select <include refid="Base_Column_List"/>
+    from app_welcome_img
+    <if test="searchCondition != null and searchCondition != ''">
+      where summary like CONCAT('%',#{searchCondition},'%')
+    </if>
+  </select>
+</mapper>
+
